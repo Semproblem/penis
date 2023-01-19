@@ -2,9 +2,9 @@ n=int(input())
 pervaya=0
 for i in range(len(str(n))):
     s = str(n)
-    jopas = int(s[i])
-    if jopas%3==0 and jopas>pervaya:
-        pervaya=jopas
+    currenDigit = int(s[i])
+    if currenDigit%3==0 and currenDigit>pervaya:
+        pervaya=currenDigit
 if pervaya==0:
     print('NO')
 else:
